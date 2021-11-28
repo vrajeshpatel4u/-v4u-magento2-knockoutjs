@@ -1,0 +1,20 @@
+<?php
+/* @var V4U\Kojs\Block\Clock $block */
+?>
+<div data-bind="scope: 'kojs-clock'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                    "kojs-clock": {
+                        "component": "V4U_Kojs/js/viewModelClock",
+                        "template" : "V4U_Kojs/clock"
+                    }
+                }
+            }
+        }
+    }
+</script>
